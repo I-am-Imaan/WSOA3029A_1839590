@@ -1,0 +1,195 @@
+.design-heading{
+
+    color: #616161;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;    
+    margin: 0rem 9rem 2rem;
+    text-align: left;
+    line-height: 200%;
+    position: absolute;
+    top: 18%;
+    left: 11.5%;
+}
+
+.browseable{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+
+.card-column {
+    float: left;
+    width: 25%;
+    padding: 0px 10px 120px;
+  }
+  
+  
+  .card-row {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 10;
+    display: inline-grid;
+    grid-auto-rows: minmax(100vh, autofit);
+    width: 100%;
+    grid-gap: 0% 8%;
+    text-align: center;
+    
+    }   
+    .info-card{
+        color: #616161;
+        font-weight: normal;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;    
+        position: relative;
+        top: 0%;
+        left: 7%;
+        text-align: left;
+    }
+  
+    .card-text{
+        font-weight: normal;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        line-height: 50%;
+        margin: 3rem 1rem 2rem 2rem;
+        padding:5px;
+        text-align: left;
+        top: 12%;
+        left: 17%;
+        color:#616161;
+        position: relative;    
+      }
+  
+  .this-card {
+    display: block;
+    margin: 2rem 0rem 1.5rem;
+    background-color: rgb(253, 253, 253);    
+    border-radius: 1%;
+    overflow: hidden;
+    border: solid 0.1rem rgb(231, 231, 231);
+    position: relative;
+    float: left;
+    left: 280%;
+    max-width: 20rem;
+    min-width: 32rem;
+    max-height: 100%;
+    height: 18rem;    
+    top: 0rem;
+    transition: all 0.2s ease-in-out;
+    
+  }
+
+  .this-card:hover {    
+    box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
+    top: -5px;
+  }
+
+  .card-green {
+    border: solid 0.25rem #A5D887;
+  }
+
+  .card-blue {
+    border: solid 0.25rem #83D5DF;
+  }
+
+  
+
+  .title-green{
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    line-height: 90%;
+    margin: 3rem 1rem 2rem 2rem;
+    text-align: left;
+    color:#A5D887;
+
+  }
+
+  .title-blue{
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    line-height: 90%;
+    margin: 3rem 1rem 2rem 2rem;
+    text-align: left;
+    color:#83D5DF;
+
+  }
+
+
+.wireframe-btn{
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 78%;
+    left: 19%;
+    text-align: left;
+    transform: translate(-50%, -50%);    
+    display: inline-block;
+    padding: 5px 8px;  
+    text-decoration: none;  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fcfcfc; 
+    color: #616161; 
+    border: 2px solid #A5D887;
+}
+
+.wireframe-btn:hover{
+    background-color: #A5D887;
+    color: #fcfcfc;
+    
+}
+
+.styleguide-btn{
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 78%;
+    left: 19%;
+    text-align: left;
+    transform: translate(-50%, -50%);    
+    display: inline-block;
+    padding: 5px 8px;  
+    text-decoration: none;  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fcfcfc; 
+    color: #616161; 
+    border: 2px solid #83D5DF;
+}
+
+.styleguide-btn:hover{
+    background-color: #83D5DF;
+    color: #fcfcfc;
+    
+}
+
+.rationale-btn{
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 78%;
+    left: 19%;
+    text-align: left;
+    transform: translate(-50%, -50%);    
+    display: inline-block;
+    padding: 5px 8px;  
+    text-decoration: none;  
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #fcfcfc; 
+    color: #616161; 
+    border: 2px solid #A5D887;
+}
+
+.rationale-btn:hover{
+    background-color: #A5D887;
+    color: #fcfcfc;
+    
+}
