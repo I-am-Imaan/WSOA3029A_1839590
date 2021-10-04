@@ -3,13 +3,14 @@
     color: #616161;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    font-size: 48px;    
+    font-size: 34px;    
     margin: 0rem 9rem 2rem;
     text-align: left;
     line-height: 200%;
     position: absolute;
     top: 18%;
-    left: 9.5%;
+    left: 14.5%;
+    background-color: #fcfcfc;
 }
 
 .browseable{
@@ -71,7 +72,7 @@
     border: solid 0.1rem rgb(231, 231, 231);
     position: relative;
     float: left;
-    left: 250%;
+    left: 320%;
     max-width: 20rem;
     min-width: 32rem;
     max-height: 100%;
