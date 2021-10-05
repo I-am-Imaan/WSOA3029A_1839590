@@ -175,6 +175,40 @@
     width: 100%;
 }
 
+.blogpost-footer{
+    position: absolute;
+    bottom: 0%;
+    top: 120%;
+    width: 100%;
+}
+
+.blogpostfour-footer{
+    position: absolute;
+    bottom: 0%;
+    top: 180%;
+    width: 100%;
+}
+
+.wireframe-footer{
+    position: absolute;
+    bottom: 0%;
+    top: 290%;
+    width: 100%;
+}
+
+.style-footer{
+    position: absolute;
+    bottom: 0%;
+    top: 130%;
+    width: 100%;
+}
+
+.style-footer{
+    position: absolute;
+    bottom: 0%;
+    top: 90%;
+    width: 100%;
+}
 .main-footer{
     position: absolute;
     bottom: 0%;
@@ -411,6 +445,12 @@ html {
     top: 0rem;
     transition: all 0.2s ease-in-out;
     
+  }
+
+  #d3-graph{
+      position: absolute;
+      top: 25%;
+      left:19%;
   }
 
   .card:hover {    

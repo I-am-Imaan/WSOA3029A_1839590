@@ -13,6 +13,23 @@
     background-color: #fcfcfc;
 }
 
+.blogpost-heading{
+
+    color: #616161;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;    
+    margin: 0rem 9rem 2rem;
+    text-align: left;
+    line-height: 200%;
+    position: absolute;
+    top: 18%;
+    left: 14.5%;
+    background-color: #fcfcfc;
+}
+
+
+
 .browseable{
     position: absolute;
     top: 30%;
@@ -295,8 +312,23 @@
     
 }
 
+.blog-content{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #616161;
+    text-align: justify;
+    padding: 10px 415px 10px 415px;
+    position: absolute;
+    top: 28%;
+}
 
+.reference{
+    font-weight: bold;
+}
 
-
+.ref-heading{
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+}
 
   
