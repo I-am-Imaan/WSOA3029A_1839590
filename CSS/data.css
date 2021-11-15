@@ -40,6 +40,7 @@
   }
   
   
+
   .card-row {
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -178,10 +179,35 @@
     border: 2px solid #83D5DF;
 }
 
-.data-btn-one:two{
+.data-btn-two:two{
     background-color: #83D5DF;
     color: #fcfcfc;
     
+}
+
+.data-btn-three{
+    
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 78%;
+  left: 19%;
+  text-align: left;
+  transform: translate(-50%, -50%);    
+  display: inline-block;
+  padding: 5px 8px;  
+  text-decoration: none;  
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fcfcfc; 
+  color: #616161; 
+  border: 2px solid #A5D887;
+}
+
+.data-btn-one:three{
+  background-color: #A5D887;
+  color: #fcfcfc;
+  
 }
 
 .wireframe-btn{
@@ -258,3 +284,10 @@
     color: #fcfcfc;
     
 }
+
+.node circle {
+  fill: #fff;
+  stroke: #616161;
+  stroke-width: 1px;
+}
+

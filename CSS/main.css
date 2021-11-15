@@ -171,7 +171,7 @@
 .blog-footer{
     position: absolute;
     bottom: 0%;
-    top: 170%;
+    top: 300%;
     width: 100%;
 }
 
@@ -219,7 +219,7 @@
 .data-footer{
     position: absolute;
     bottom: 0%;
-    top: 85%;
+    top: 120%;
     width: 100%;
 }
 
@@ -453,6 +453,17 @@ html {
       left:19%;
   }
 
+  #tree-graph{
+    position: absolute;
+    top: 25%;
+    left:19%;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
   .card:hover {    
     box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
     top: -5px;
