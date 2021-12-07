@@ -8,8 +8,9 @@
     <link rel = "stylesheet" href = "../CSS/data.css">
     <link rel="icon" type="image/jpg" href="./Images/LogoImg.png">   
     <script type = "module" src = '../JavaScript/main.js'></script>
-    <script type = "module" src = '../JavaScript/BarChart.js'></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    
     <meta property= "og:site_name" content="Diabetic Drop">
     <meta property="og:title" content="Diabetic Drop">
     <meta property= "og:type" content= "Website">
@@ -61,27 +62,125 @@
             <img src = "../Images/background.png" class="background-img" width = "100%" height = "1200">
 
             <h1 class = "blog-heading">
-                Body-Fat% vs Diabetes
+                How Blood Glucose Levels Are Influenced
             </h1>  
 
        </article>
 
-        <article id = "d3-graph"></article>
-       
-        <article class = "data-footer">
-            <footer class = "footer">
-                <img src = "../Images/LogoImg.png" class = "footer-logo u-logo" width = "60" height= "135" >  
-        
-                <p> &copy; Copyrights reserved. Diabetic Drop 2021 </p>   
-                <p class = "footer-txt h-card" > Imaan Abusamra (1839590) </p>              
-            </footer>
-
-        </article>       
-
-        <a href = "#" class = "to-top">&#9651</a>
+      
+        <script type="text/javascript">
     
-                     
-    </main>
-        
-</body>
+            dataset = {
+                "children": [
+                    {"Name":"Insulin","Count":200, "Effect":"Decrease"},
+                    {"Name":"Exercise","Count":300 , "Effect":"Decrease"},
+                    {"Name":"High Temp.","Count":400, "Effect":"Decrease"},
+                    {"Name":"Low Temp.","Count":500, "Effect":"Constant"},                    
+                    {"Name":"Good Sleep","Count":400, "Effect":"Decrease"},
+                    {"Name":"Less Sleep","Count":600, "Effect":"Increase"},
+                    {"Name":"Hydration","Count":400, "Effect":"Decrease"},
+                    {"Name":"Carbs","Count":900, "Effect":"Increase"},
+                    {"Name":"Sugars","Count":1000, "Effect":"Increase"},
+                    {"Name":"Stress","Count":600, "Effect":"Increase"},
+                    {"Name":"Dairy","Count":800, "Effect":"Increase"},
+                    {"Name":"Protein","Count":500, "Effect":"Constant"},
+                    {"Name":"Fats","Count":800, "Effect":"Increase"},
+                    {"Name":"Fruits","Count":700, "Effect":"Increase"},
+                    {"Name":"Veggies","Count":700, "Effect":"Increase"}
+                    
+                ]
+            };
+    
+            var diameter = 800;
+            
+            var color = d3.scaleOrdinal()
+            .range(["#83D5DF", "#A5D887"]);
+    
+            var bubble = d3.pack(dataset)
+                .size([diameter, diameter])
+                .padding(3);
+    
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", diameter)
+                .attr("height", diameter)
+                .attr("class", "bubble");
+    
+            var nodes = d3.hierarchy(dataset)
+                .sum(function(d) { return d.Count; });
+    
+            var node = svg.selectAll(".node")
+                .data(bubble(nodes).descendants())
+                .enter()
+                .filter(function(d){
+                    return  !d.children
+                })
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", function(d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+    
+            node.append("title")
+                .text(function(d) {
+                    return d.Name + ": " + d.Effect + ": ";
+                });
+    
+            node.append("circle")
+                .attr("r", function(d) {
+                    return d.r;
+                })
+                .style("fill", function(d,i) {
+                    return color(i);
+                });
+    
+            node.append("text")
+                .attr("dy", ".2em")
+                .style("text-anchor", "middle")
+                .text(function(d) {
+                    return d.data.Name.substring(0, d.r / 3);
+                })
+                .attr("font-size", '20px')
+                
+                .attr("fill", "white");
+    
+            node.append("text")
+                .attr("dy", "1.3em")
+                .style("text-anchor", "middle")
+                .text(function(d) {
+                    return d.data.Effect;
+                })
+                .attr("font-size", '15px')
+                
+                .attr("fill", "#616161");
+    
+            d3.select(self.frameElement)
+                .style("height", diameter + "px");
+    
+    
+    
+        </script>
+
+<article class = "blog-content">
+    <p>
+        There are number of things that impact the blood glucose levels of a diabetic - not only sugar consumption.
+        Eating increases blood glucose levels in general, but the higher the glycaemic index of the food type, the more the increase in sugar levels.
+        Sugars and carbs increase blood glucose levels most, while fruits, veggies, dairy and fats increase blood glucose levels to a lesser extent - with proteins increasing them the least. 
+        Other factors, such as stress, lack of sleep and low body temperatures also increase blood glucose levels as they are not good for a diabetic's health and wellbeing.
+        More sleep, higher body temperatures, and enough hydration decrease blood glucose levels. Taking Insulin and exercising, decrease blood glucose levels most.
+    </p>
+</article>
+
+<article class = "data-footer">
+    <footer class = "footer">
+        <img src = "../Images/LogoImg.png" class = "footer-logo u-logo" width = "60" height= "135" >  
+
+        <p> &copy; Copyrights reserved. Diabetic Drop 2021 </p>   
+        <p class = "footer-txt h-card" > Imaan Abusamra (1839590) </p>              
+    </footer>
+
+</article>       
+
+<a href = "#" class = "to-top">&#9651</a>
+    </body>
 </html>

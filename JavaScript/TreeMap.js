@@ -190,6 +190,7 @@ var treeData = {
         } else {
           d.children = d._children;
           d._children = null;
+          
         }
         update(d);
       }

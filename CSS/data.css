@@ -13,6 +13,17 @@
     background-color: #fcfcfc;
 }
 
+.blog-content{
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #616161;
+  text-align: justify;
+  padding: 10px 415px 10px 415px;
+  position: absolute;
+  top: 83%;
+  left: 0.5%;
+}
+
 .design-heading{
 
     color: #616161;
@@ -179,7 +190,7 @@
     border: 2px solid #83D5DF;
 }
 
-.data-btn-two:two{
+.data-btn-two:hover{
     background-color: #83D5DF;
     color: #fcfcfc;
     
@@ -204,10 +215,60 @@
   border: 2px solid #A5D887;
 }
 
-.data-btn-one:three{
+.data-btn-three:hover{
   background-color: #A5D887;
   color: #fcfcfc;
   
+}
+
+.data-btn-four{
+    
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 78%;
+  left: 19%;
+  text-align: left;
+  transform: translate(-50%, -50%);    
+  display: inline-block;
+  padding: 5px 8px;  
+  text-decoration: none;  
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fcfcfc; 
+  color: #616161; 
+  border: 2px solid #83D5DF;
+}
+
+.data-btn-four:hover{
+  background-color: #83D5DF;
+  color: #fcfcfc;
+  
+}
+
+.data-btn-five{
+  
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+position: absolute;
+top: 78%;
+left: 19%;
+text-align: left;
+transform: translate(-50%, -50%);    
+display: inline-block;
+padding: 5px 8px;  
+text-decoration: none;  
+transition-duration: 0.4s;
+cursor: pointer;
+background-color: #fcfcfc; 
+color: #616161; 
+border: 2px solid #A5D887;
+}
+
+.data-btn-five:hover{
+background-color: #A5D887;
+color: #fcfcfc;
+
 }
 
 .wireframe-btn{
@@ -291,3 +352,88 @@
   stroke-width: 1px;
 }
 
+#snakeboard {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#score {
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  top: 37%;
+  left:30%;
+  background-color: #fcfcfc;
+}
+
+.clickable1{
+  position: absolute;
+  top: 62%;
+  left: 23%;
+  font-size: 16px;
+}
+
+.clickable2{
+  position: absolute;
+  top: 62%;
+  left: 29%;
+  font-size: 16px;
+}
+
+.bubble{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.scoreText{
+  position: absolute;
+  top: 42%;
+  left: 30.2%;
+  font-size: 20px;
+  background-color: #fcfcfc;
+
+}
+
+.gameText{
+  position: absolute;
+  top: 25%;
+  left: 21%;
+  font-size: 20px;
+  
+
+}
+
+.gameText2{
+  position: absolute;
+  top: 28%;
+  left: 21%;
+  font-size: 20px;
+ 
+
+}
+
+.learnText{
+  position: absolute;
+  top: 33%;
+  left: 44.5%;
+  font-size: 18px;
+  
+
+}
+
+.learnText2{
+  position: absolute;
+  top: 35%;
+  left: 44.5%;
+  font-size: 18px;
+  
+
+}
+
+.gameKey{
+  position: absolute;
+  top: 36%;
+  left: 65%;
+}
