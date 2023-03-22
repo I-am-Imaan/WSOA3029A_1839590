@@ -6,9 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FCFCFC;
+    background-color: #fbfbfb;
     color: #616161;
-    box-shadow: 0rem 0.09rem 0.1rem 0.05rem #f3f3f3;
+    box-shadow: 0.1rem 0.1rem 0.4rem 0.05rem rgba(190, 190, 190, 0.17);
     border-bottom: #ffffff solid 0.04rem;
     position: fixed;
     width: 100%;
@@ -37,7 +37,9 @@
 }
 
 .nav-links li:hover{
-   background-color: #c0c1c3;  
+   background-color: #c0c1c3b6;  
+   border-radius: 0.5rem;
+   
    
 }
 
@@ -45,6 +47,7 @@
 .website-logo{
     padding: 1rem 1rem 1rem 1rem;
     line-height: 10px;
+    margin-left: 3rem;
 }
 
 .toggle-button{
@@ -110,9 +113,9 @@
     font-family: "Montserrat", sans-serif;
     font-size: 55px;
     line-height: 50%;
-    position: absolute;
-    top: 15%;
-    left: 27%;
+    position: relative;
+    top: -61rem;
+    left: 52rem;
     text-align: left;
     transform: translate(-50%, -50%);
 }
@@ -135,9 +138,9 @@
     color: #616161;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
-    position: absolute;
-    top: 20%;
-    left: 19%;
+    position: relative;
+    top: -61rem;
+    left: 17.5rem;
     text-align: left;
     transform: translate(-50%, -50%);    
     display: inline-block;
@@ -147,19 +150,21 @@
     
     font-family: "Poppins", sans-serif;
     font-size: 20px;
+    font-weight: 580;
     position: absolute;
-    top: 26%;
-    left: 12.4%;
+    top: 29.5rem;
+    left: 9.8rem;
     text-align: left;
     transform: translate(-50%, -50%);    
     display: inline-block;
-    padding: 10px 10px;  
+    padding: 12px 15px;  
     text-decoration: none;  
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: #A5D887; 
     color: #616161; 
     border: 2px solid #A5D887;
+    border-radius: 0.5rem;
 }
 
 .more-btn:hover{
@@ -171,14 +176,14 @@
 .blog-footer{
     position: absolute;
     bottom: 0%;
-    top: 320%;
+    top: 100%;
     width: 100%;
 }
 
 .blogpost-footer{
     position: absolute;
     bottom: 0%;
-    top: 120%;
+    top: 150%;
     width: 100%;
 }
 
@@ -244,10 +249,11 @@
 }
 
 body{
-    background-color: #FCFCFC;
+    background-color: #f9f9f9;
     font-family: "Poppins", "arial", "sans-serif";     
     text-align: left;  
-    margin: 0 0 150px;   
+    margin: 0 0 150px;  
+    overflow-x: hidden; 
 }
 
 html {
@@ -279,13 +285,21 @@ html {
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .blog-btn:hover{
-    background-color: #A5D887;
+    background-color: #a5d887e6;
     color: #fcfcfc;
     
+}
+
+.card:hover{
+    
+    
+    box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
+    top: -10px;
 }
 
 .data-btn{
@@ -304,11 +318,12 @@ html {
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .data-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -329,7 +344,8 @@ html {
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #c0c1c3;
+    border: 3px solid #c0c1c3;
+    border-radius: 0.35rem;
 }
 
 .design-btn:hover{
@@ -340,23 +356,27 @@ html {
 
 .about-card {
     
-    background-color: #FCFCFC;
+    background-color: #fbfbfbe9;
     text-align: center;
     align-self: center;
-    border-radius: 0.5%;
+    border-radius: 1rem;
     overflow: hidden;
-    border: solid 0.3rem rgb(241, 241, 241);
-    position: absolute;
-    top: 49%; 
+    border: solid 0.1rem rgb(245, 245, 245);
+    box-shadow:  rgb(230, 230, 230) 0.1rem 0.1rem 0.2rem;
+    position: relative;
+    top: -40rem; 
     left: 50%;     
     transform: translate(-50%, -50%); 
-    max-width: 20rem;
+    max-width: 50rem;
     min-width: 80rem;
     max-height: 100%;
     height: 20rem;
     display: block;
+    box-shadow: 0.1rem 0.2rem 0.4rem 0.1rem rgb(190, 190, 190);
+    transition: all 0.2s ease-in-out;
     
 }
+
 
 .about-logo{
     float: left;
@@ -406,7 +426,7 @@ html {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-size: 34px;    
-    margin: 2rem 9rem 2rem;
+    margin: -42rem 5rem 2rem;
     text-align: left;
     line-height: 200%;
 }
@@ -448,9 +468,9 @@ html {
   
   .card {
     display: block;
-    margin: 2rem 0rem 1.5rem;
-    background-color: rgb(253, 253, 253);    
-    border-radius: 1%;
+    margin: 4rem -2.9rem -5rem;
+    background-color: #fbfbfb;    
+    border-radius: 0.5rem;
     overflow: hidden;
     border: solid 0.1rem rgb(231, 231, 231);
     position: relative;
@@ -461,7 +481,10 @@ html {
     max-height: 100%;
     height: 18rem;    
     top: 0rem;
+    box-shadow: 0.1rem 0.2rem 0.4rem 0.1rem rgb(190, 190, 190);
     transition: all 0.2s ease-in-out;
+    
+    
     
   }
 
@@ -482,21 +505,21 @@ html {
     stroke: #ccc;
     stroke-width: 1.5px;
 }
-  .card:hover {    
-    box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
-    top: -5px;
-  }
+  
 
   .green-card {
     border: solid 0.25rem #A5D887;
+   
   }
 
   .blue-card {
     border: solid 0.25rem #83D5DF;
+   
   }
 
   .gray-card {
     border: solid 0.25rem #c0c1c3;
+    
   }
 
   .green-title{
@@ -560,17 +583,20 @@ html {
 }
 
 .to-top{
-    background-color: #c0c1c3;
+    background-color: #c0c1c3e0;
+    color: #fcfcfc;
+    font-weight: bold;
     position: fixed;
     bottom: 16px;
-    right: 32px;
+    right: 30px;
     width: 50px;
     height:50px;
-    border-radius: 20%;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #fcfcfc;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 29px;
+    font-size: 35px;
     text-decoration: none;
     opacity: 0;
     pointer-events: none;

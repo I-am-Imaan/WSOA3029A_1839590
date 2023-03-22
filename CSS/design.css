@@ -1,16 +1,15 @@
 .design-heading{
 
-    color: #616161;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 34px;    
-    margin: 0rem 9rem 2rem;
-    text-align: left;
-    line-height: 200%;
-    position: absolute;
-    top: 18%;
-    left: 13.5%;
-    background-color: #fcfcfc;
+  color: #75757592;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;    
+  margin: 0rem 9rem 0rem;
+  text-align: left;
+  line-height: 200%;
+  position: relative;
+  top: -50rem;
+  left: 15rem;
 }
 
 .browseable{
@@ -22,19 +21,19 @@
 .card-column {
     float: left;
     width: 25%;
-    padding: 0px 10px 120px;
+    padding: 0px 5px 100px;
   }
   
   
   .card-row {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 80rem;
-    margin: 0 10;
+    margin: 0 50;
     display: inline-grid;
     grid-auto-rows: minmax(100vh, autofit);
-    width: 100%;
-    grid-gap: 0% 8%;
+    width: 50%;
+    grid-gap: 0% 2%;
     text-align: center;
     
     }   
@@ -63,29 +62,29 @@
         position: relative;    
       }
   
-  .this-card {
-    display: block;
-    margin: 2rem 0rem 1.5rem;
-    background-color: rgb(253, 253, 253);    
-    border-radius: 1%;
-    overflow: hidden;
-    border: solid 0.1rem rgb(231, 231, 231);
-    position: relative;
-    float: left;
-    left: 310%;
-    max-width: 20rem;
-    min-width: 32rem;
-    max-height: 100%;
-    height: 18rem;    
-    top: 0rem;
-    transition: all 0.2s ease-in-out;
+      .this-card {
+        display: block;
+        margin: 5rem 0rem -15rem;
+        background-color: rgb(253, 253, 253);    
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: solid 0.1rem rgb(231, 231, 231);
+        position: relative;
+        float: left;
+        left: 50%;
+        max-width: 10rem;
+        min-width: 28rem;
+        max-height: 100%;
+        height: 25rem;    
+        top: 0rem;
+        transition: all 0.2s ease-in-out;
+        
+      }
     
-  }
-
-  .this-card:hover {    
-    box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
-    top: -5px;
-  }
+      .this-card:hover {    
+        box-shadow: 0.2rem 0.3rem 0.5rem 0.1rem rgb(190, 190, 190);
+        top: -5px;
+      }
 
   .card-green {
     border: solid 0.25rem #A5D887;

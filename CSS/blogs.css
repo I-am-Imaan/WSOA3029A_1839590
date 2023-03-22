@@ -1,16 +1,15 @@
 .blog-heading{
 
-    color: #616161;
+    color: #757575;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    font-size: 34px;    
-    margin: 0rem 9rem 2rem;
+    font-size: 36px;    
+    margin: 0rem 9rem 0rem;
     text-align: left;
     line-height: 200%;
-    position: absolute;
-    top: 18%;
-    left: 14.5%;
-    background-color: #fcfcfc;
+    position: relative;
+    top: -60rem;
+    left: -4rem;
 }
 
 .blogpost-heading{
@@ -22,36 +21,38 @@
     margin: 0rem 9rem 2rem;
     text-align: left;
     line-height: 200%;
-    position: absolute;
-    top: 18%;
-    left: 14.5%;
-    background-color: #fcfcfc;
+    position: relative;
+    top: -60rem;
+    left: 17.3rem;
+    background-color: #fcfcfc00;
 }
 
 
 
 .browseable{
-    position: absolute;
-    top: 30%;
-    left: 0%;
+    position: relative;
+    top: -60rem;
+    left: -17rem;
+    height: 55rem;
 }
+
 
 .card-column {
     float: left;
     width: 25%;
-    padding: 0px 10px 120px;
+    padding: 0px 5px 100px;
   }
   
   
   .card-row {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 80rem;
-    margin: 0 10;
+    margin: 0 50;
     display: inline-grid;
     grid-auto-rows: minmax(100vh, autofit);
-    width: 100%;
-    grid-gap: 0% 8%;
+    width: 50%;
+    grid-gap: 0% 2%;
     text-align: center;
     
     }   
@@ -82,18 +83,18 @@
   
   .this-card {
     display: block;
-    margin: 2rem 0rem 1.5rem;
+    margin: 5rem 0rem -15rem;
     background-color: rgb(253, 253, 253);    
-    border-radius: 1%;
+    border-radius: 0.5rem;
     overflow: hidden;
     border: solid 0.1rem rgb(231, 231, 231);
     position: relative;
     float: left;
     left: 320%;
-    max-width: 20rem;
-    min-width: 32rem;
+    max-width: 10rem;
+    min-width: 28rem;
     max-height: 100%;
-    height: 18rem;    
+    height: 25rem;    
     top: 0rem;
     transition: all 0.2s ease-in-out;
     
@@ -153,11 +154,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .one-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -178,11 +180,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .two-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -203,11 +206,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .three-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -228,11 +232,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .four-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -253,11 +258,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .five-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -278,11 +284,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .six-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -303,11 +310,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .seven-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -328,11 +336,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .eight-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -353,11 +362,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .nine-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -378,11 +388,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .ten-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -403,11 +414,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .eleven-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -428,11 +440,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .twelve-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -453,11 +466,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .thirteen-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
@@ -478,11 +492,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #83D5DF;
+    border: 3px solid #83D5DFe6;
+    border-radius: 0.35rem;
 }
 
 .fourteen-btn:hover{
-    background-color: #83D5DF;
+    background-color: #83D5DFe6;
     color: #fcfcfc;
     
 }
@@ -503,11 +518,12 @@
     cursor: pointer;
     background-color: #fcfcfc; 
     color: #616161; 
-    border: 2px solid #A5D887;
+    border: 3px solid #A5D887e6;
+    border-radius: 0.35rem;
 }
 
 .fifteen-btn:hover{
-    background-color: #A5D887;
+    background-color: #A5D887e6;
     color: #fcfcfc;
     
 }
